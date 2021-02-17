@@ -33,16 +33,873 @@
 
 $fontPrimary : "Poppins";
 
-$colorYellow : #FDBF1F;
-$colorBlueLight : #CDEEF6;
-$colorPink : #F17EAB;
-$colorRed : #F02424;
-$colorGray : #C4C4C4;
-$colorLight : #EFEFEF;
-$colorDark : #393939;
+$colorYellow : #fbae27;
+$colorGreen : #21c87a;
+
+$colorBlueLight : #6393db;
+$colorBlue1 : #0166ff;
+$colorBlue2 : #2f78e6;
+
+$colorGray : #a5a5a5;
+$colorLight : #eaeaea;
+$colorLight2 : #fafafa;
+
+$colorDark : #1c1a1f;
 $colorBlack : #000000;
 
+    body {
+        font-family: $fontPrimary;
+        color: $colorDark;
 
+        button {
+            outline: none;
+        }
+
+        input {
+            outline: none;
+        }
+
+        select {
+            outline: none;
+        }
+    }
+
+    .nav-desktop {
+        width: 100%;
+        height: 80px;
+        background-color: white;
+        box-shadow: 0px 20px 60px rgba($color: $colorDark, $alpha: 0.04);
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        z-index: 999;
+
+        .content {
+            width: 90%;
+            height: 100%;
+            display: flex;
+
+            .logo {
+                width: 15%;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            .menu {
+                width: 65%;
+
+                ul {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+
+                    li {
+                        height: 100%;
+                        margin-right: 25px;
+                        display: flex;
+                        align-items: center;
+
+                        a {
+                            text-decoration: none;
+                            color: inherit;
+                            font-size: 14px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    li:hover {
+                        color: $colorBlue2;
+                    }
+
+                    li.active {
+                        color: $colorBlue2;
+                    }
+                }
+            }
+
+            .icon {
+                width: 20%;
+                display: flex;
+                justify-content: space-between;
+
+                .wishlist {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    width: 50px;
+                    cursor: pointer;
+
+                    i {
+                        font-size: 20px;
+                    }
+
+                    .circle {
+                        position: absolute;
+                        width: 16px;
+                        height: 16px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $colorBlue2;
+                        border-radius: 16px;
+                        top: 22px;
+                        right: 8px;
+                        
+                        span {
+                            color: white;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .cart {
+                    width: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    cursor: pointer;
+
+                    i {
+                        font-size: 20px;
+                    }
+
+                    .circle {
+                        position: absolute;
+                        width: 16px;
+                        height: 16px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: $colorBlue2;
+                        border-radius: 16px;
+                        top: 22px;
+                        right: 8px;
+                        
+                        span {
+                            color: white;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .profile {
+                    width: 100px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    cursor: pointer;
+
+                    h4 {
+                        margin-right: 15px;
+                        font-size: 14px;
+                    }
+
+                    i {
+                        color: $colorBlue2;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .home-page {
+
+        .bg-main {
+            width: 100%;
+            height: 1150px;
+            position: relative;
+            z-index: 1;
+            top: 80px;
+            background-color: white;
+            overflow: hidden;
+
+            .circle {
+                width: 100px;
+                height: 100px;
+                background: linear-gradient($colorBlue2, $colorGreen 60%);
+                border-radius: 100%;
+                position: absolute;
+                box-shadow: 0px 60px 100px rgba($color: $colorGreen, $alpha: 0.32);
+            }
+
+            .circle-1 {
+                width: 335px;
+                height: 335px;
+                transform: rotate(30deg);
+                top: 20px;
+                left: -240px;
+            }
+
+            .circle-2 {
+                width: 260px;
+                height: 260px;
+                transform: rotate(150deg);
+                top: 250px;
+                right: -200px;
+            }
+
+            .circle-3 {
+                width: 80px;
+                height: 80px;
+                transform: rotate(90deg);
+                top: 550px;
+                left: 100px;
+            }
+
+            .circle-4 {
+                width: 100px;
+                height: 100px;
+                transform: rotate(27deg);
+                top: 700px;
+                left: 120px;
+            }
+
+            .circle-5 {
+                width: 150px;
+                height: 150px;
+                transform: rotate(300deg);
+                top: 850px;
+                right: 10px;
+            }
+
+            .box {
+                width: 150px;
+                height: 150px;
+                background-color: white;
+                border-radius: 15px;
+                margin-bottom: 20px;
+                position: absolute;
+                z-index: 2;
+                box-shadow: 0px 60px 100px rgba($color: $colorGreen, $alpha: 0.16);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                i {
+                    color: $colorGreen;
+                    font-size: 60px;
+                }
+            }
+
+            .box-1 {
+                top: 600px;
+                left: 60px;
+            }
+
+            .box-2 {
+                top: 550px;
+                right: 80px;
+
+                .icon-1 {
+                    font-size: 35px;
+                    margin-top: -20px;
+                }
+
+                .icon-2 {
+                    font-size: 45px;
+                    margin-bottom: -20px;
+                }
+            }
+
+            .box-3 {
+                top: 870px;
+                left: 150px;
+            }
+
+            .box-4 {
+                top: 900px;
+                right: 100px;
+            }
+
+        }
+
+        .banner-slider {
+            position: absolute;
+            top: 120px;
+            z-index: 1;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+
+            .content {
+                width: 90%;
+
+                .slider {
+                    margin-bottom: 50px;
+
+                    img {
+                        width: 100%;
+                    }
+                    
+                }
+
+                .icon-slider {
+                    display: flex;
+                    justify-content: center;
+
+                    .circle {
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 8px;
+                        background-color: white;
+                        border: 1px solid $colorBlue2;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+
+                    .circle.active {
+                        background-color: $colorBlue2;
+                    }
+                }
+            }
+        }
+
+        .main-section {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            z-index: 1;
+            top: 620px;
+
+            .content {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h1 {
+                    margin-top: 30px;
+                    text-align: center;
+                    width: 700px;
+                    font-weight: 600;
+                    font-size: 50px;
+                    line-height: 60px;
+                    margin-bottom: 20px;
+
+                    span {
+                        color: $colorBlue2;
+                    }
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-bottom: 50px;
+                }
+
+                form {
+                    width: 500px;
+                    .form-group {
+                        display: flex;
+                        justify-content: space-between;
+                        position: relative;
+
+                        input {
+                            width: 69%;
+                            height: 45px;
+                            background-color: white;
+                            font-size: 16px; 
+                            box-sizing: border-box;
+                            padding: 10px 20px 10px 20px;
+                            border-radius: 20px;
+                            border: 1px solid white;
+                            color: $colorDark;
+                            box-shadow: 0px 30px 60px rgba($color: $colorDark, $alpha: 0.2);
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            transition: 500ms;
+                        }
+
+                        input:focus {
+                            top: 5px;
+                            transition: 500ms;
+                            box-shadow: 0px 30px 60px rgba($color: $colorDark, $alpha: 0.0);
+                            border: 1px solid $colorLight;
+                        }
+
+                        button {
+                            width: 29%;
+                            height: 45px;
+                            background-color: $colorBlue2;
+                            box-shadow: 0px 30px 60px rgba($color: $colorBlue2, $alpha: 0.6);
+                            border-radius: 20px;
+                            border: 1px solid $colorBlue2;
+                            color: white;
+                            font-weight: 400;
+                            font-size: 14px;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            transition: 500ms;
+                            cursor: pointer;
+                        }
+
+                        button:hover {
+                            top: 5px;
+                            transition: 500ms;
+                            box-shadow: 0px 30px 60px rgba($color: $colorBlue2, $alpha: 0.0);
+                            border: 1px solid $colorBlue2;
+                        }
+                    }
+                }
+            }
+        }
+
+        .kelas-terpopuler {
+            margin-top: 150px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+            margin-bottom: 80px;
+
+            .content {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    text-align: center;
+                    font-size: 36px;
+                    font-weight: 500;
+                    line-height: 48px;
+                    width: 75%;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 14px;
+                    width: 75%;
+                    line-height: 24px;
+                    margin-bottom: 50px;
+                }
+
+                .card-group {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    .card {
+                        width: 270px;
+                        height: 365px;
+                        margin-left: 15px;
+                        margin-right: 15px;
+                        margin-bottom: 30px;
+
+                        .card-top {
+                            height: 195px;
+                            position: relative;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 10px 10px 0px 0px;
+                            overflow: hidden;
+
+                            img {
+                                position: absolute;
+                                bottom: 0;
+                                height: 190px;
+                                z-index: 2;
+                            }
+
+                            .action {
+                                height: 40px;
+                                width: 100%;
+                                align-items: center;
+                                justify-content: space-between;
+                                z-index: 3;
+                                position: absolute;
+                                top: 0;
+                                display: flex;
+                                padding: 0px 15px 0px 15px;
+                                box-sizing: border-box;
+
+                                i {
+                                    color: $colorBlue2;
+                                }
+
+                                .review {
+                                    font-size: 12px;
+                                    height: 40px;
+                                    width: 50px;
+                                    background-color: $colorYellow;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                    clip-path: polygon(10px 0px, 50px 0px, 50px 40px, 30px 30px, 10px 40px, 10px 5px, 0px 5px);
+
+                                    h5 {
+                                        margin-top: -5px;
+                                        margin-left: 10px;
+                                        color: white;
+                                    }
+                                }
+                            }
+
+                            .information {
+                                z-index: 3;
+                                position: absolute;
+                                bottom: 0;
+                                display: flex;
+                                width: 100%;
+                                height: 40px;
+                                padding: 0px 15px 0px 15px;
+                                box-sizing: border-box;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .information-group {
+                                    display: flex;
+
+                                    i {
+                                        color: $colorBlue2;
+                                    }
+
+                                    h4 {
+                                        margin-left: 10px;
+                                        color: white;
+                                    }
+                                }
+
+                                .information-jenis {
+
+                                    .badge {
+                                        height: 20px;
+                                        background: $colorBlue2;
+                                        font-size: 12px;
+                                        color: white;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 2px 5px 2px 5px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .card-bottom {
+                            height: 170px;
+                            box-shadow: 0px 20px 60px rgba($color: $colorDark, $alpha: 0.16);
+                            border-radius: 0px 0px 10px 10px;
+                            overflow: hidden;
+                            padding: 15px 15px 10px 15px;
+                            box-sizing: border-box;
+
+                            .title {
+                                margin-top: 0px;
+                                margin-bottom: 20px;
+                                h3 {
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    margin-bottom: 10px;
+                                }
+
+                                h4 {
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    span {
+                                        color: $colorBlue2;
+                                    }
+                                }
+                            }
+
+                            hr {
+                                margin-bottom: 10px;
+                                height: 1px;
+                                background-color: $colorLight;
+                                border: none;
+                            }
+
+                            .footer {
+                                display: flex;
+                                justify-content: space-between;
+
+                                .action {
+                                    .btn-beli {
+                                        height: 40px;
+                                        background-color: $colorGreen;
+                                        border: none;
+                                        color: white;
+                                        border-radius: 5px;
+                                        padding: 0px 12px 0px 12px;
+                                    }
+
+                                    .btn-cart {
+                                        height: 40px;
+                                        background-color: $colorDark;
+                                        border: none;
+                                        color: white;
+                                        border-radius: 5px;
+                                        padding: 0px 12px 0px 12px;
+                                    }
+                                }
+
+                                .harga {
+                                    text-align: right;
+                                    align-items: center;
+                                    
+                                    h5 {
+                                        font-size: 12px;
+                                        color: $colorYellow;
+                                        margin-bottom: 5px;
+                                        font-weight: 500;
+                                        text-decoration: line-through;
+                                    }
+
+                                    h4 {
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .kelas-jenis {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding-bottom: 80px;
+            margin-bottom: 50px;
+            
+            .left {
+                width: 49%;
+                background-color: $colorDark;
+                color: white;
+                box-sizing: border-box;
+                padding: 50px 80px 50px 80px;
+
+                .heading {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 30px;
+
+                    i {
+                        font-size: 50px;
+                    }
+
+                    h2 {
+                        font-size: 28px;
+                        margin-left: 30px;
+                    }
+                }
+
+                p {
+                    line-height: 24px;
+                    font-size: 14px;
+                    margin-bottom: 30px;
+                }
+
+                button {
+                    padding: 0px 20px 0px 20px;
+                    height: 50px;
+                    background-color: $colorBlue2;
+                    border: none;
+                    color: white;
+                    border-radius: 30px;
+                }
+            }
+
+            .right {
+                width: 49%;
+                background-color: $colorLight;
+                color: $colorDark;
+                box-sizing: border-box;
+                padding: 50px 80px 50px 80px;
+
+                .heading {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 30px;
+
+                    i {
+                        font-size: 50px;
+                    }
+
+                    h2 {
+                        font-size: 28px;
+                        margin-left: 30px;
+                    }
+                }
+
+                p {
+                    line-height: 24px;
+                    font-size: 14px;
+                    margin-bottom: 30px;
+                }
+
+                button {
+                    padding: 0px 20px 0px 20px;
+                    height: 50px;
+                    background-color: $colorDark;
+                    border: none;
+                    color: white;
+                    border-radius: 30px;
+                }
+            }
+        }
+
+        .why-us {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 80px;
+            margin-bottom: 50px;
+
+            .content {
+                width: 90%;
+                display: flex;
+
+                .left {
+                    width: 50%;
+                    position: relative;
+
+                    .frame {
+                        width: 470px;
+                        height: 290px;
+                        border: 10px solid $colorLight;
+                        position: absolute;
+                        top: 40px;
+                        left: 40px;
+                    }
+
+                    .img-1 {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    .img-2 {
+                        position: absolute;
+                        bottom: 0;
+                        right: 20px;
+                    }
+                }
+
+                .right {
+                    width: 50%;
+                    padding-bottom: 30px;
+
+                    h2 {
+                        font-size: 36px;
+                        font-weight: 500;
+                        line-height: 48px;
+                        margin-bottom: 20px;
+
+                        span {
+                            color: $colorBlue2;
+                        }
+                    }
+
+                    p {
+                        line-height: 24px;
+                        font-size: 14px;
+                        color: $colorGray;
+                        margin-bottom: 30px;
+                    }
+
+                    .icon-group {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+
+                        .icon {
+                            display: flex;
+                            align-items: center;
+                            width: 270px;
+                            margin-bottom: 20px;
+
+                            .box {
+                                width: 75px;
+                                height: 75px;
+                                border-radius: 15px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: white;
+                                margin-right: 20px;
+
+                                i {
+                                    color: $colorDark;
+                                    font-size: 24px;
+                                }
+                            }
+
+                            h4 {
+                                font-size: 18px;
+                                color: $colorDark;
+                            }
+                        }
+
+                        .icon:hover {
+
+                            .box {
+                                transition: 300ms;
+                                background-color: $colorBlue2;
+
+                                i {
+                                    color: white;
+                                }
+                            }
+
+                            h4 {
+                                color: $colorBlue2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .you-get {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .content {
+                display: flex;
+
+                .left {
+                    width: 50%;
+                }
+
+                .right {
+                    width: 50%;
+                    .group-icon {
+                        
+                        .icon {
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 
     #mobile {
         display: none;
