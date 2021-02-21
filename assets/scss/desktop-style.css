@@ -356,6 +356,7 @@
     color: white;
     border-radius: 20px;
     width: 25%;
+    cursor: pointer;
   }
   .footer hr {
     width: 100%;
@@ -840,15 +841,16 @@
     background-color: #eaeaea;
     border: none;
   }
-  .home-page .kelas-terpopuler .content .card-group .card .card-bottom .footer {
+  .home-page .kelas-terpopuler .content .card-group .card .card-bottom .card-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    background-color: white;
   }
-  .home-page .kelas-terpopuler .content .card-group .card .card-bottom .footer .action .btn-beli {
+  .home-page .kelas-terpopuler .content .card-group .card .card-bottom .card-footer .action .btn-beli {
     height: 40px;
     background-color: #21c87a;
     border: none;
@@ -856,7 +858,7 @@
     border-radius: 5px;
     padding: 0px 12px 0px 12px;
   }
-  .home-page .kelas-terpopuler .content .card-group .card .card-bottom .footer .action .btn-cart {
+  .home-page .kelas-terpopuler .content .card-group .card .card-bottom .card-footer .action .btn-cart {
     height: 40px;
     background-color: #1c1a1f;
     border: none;
@@ -864,20 +866,19 @@
     border-radius: 5px;
     padding: 0px 12px 0px 12px;
   }
-  .home-page .kelas-terpopuler .content .card-group .card .card-bottom .footer .harga {
+  .home-page .kelas-terpopuler .content .card-group .card .card-bottom .card-footer .harga {
     text-align: right;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .home-page .kelas-terpopuler .content .card-group .card .card-bottom .footer .harga h5 {
+  .home-page .kelas-terpopuler .content .card-group .card .card-bottom .card-footer .harga h5 {
     font-size: 12px;
     color: #fbae27;
     margin-bottom: 5px;
     font-weight: 500;
-    text-decoration: line-through;
   }
-  .home-page .kelas-terpopuler .content .card-group .card .card-bottom .footer .harga h4 {
+  .home-page .kelas-terpopuler .content .card-group .card .card-bottom .card-footer .harga h4 {
     font-size: 18px;
     font-weight: 500;
   }
@@ -1312,6 +1313,169 @@
   }
   .home-page .testimoni .content .right .logo .img {
     width: 49%;
+  }
+  .about-page .main {
+    padding-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-page .main .content {
+    width: 90%;
+  }
+  .about-page .main .content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2f78e6;
+    font-weight: 500;
+    margin-top: 80px;
+  }
+  .about-page .main .content p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 80px;
+    width: 900px;
+  }
+  .about-page .story {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about-page .story .story-left {
+    width: 50%;
+  }
+  .about-page .story .story-left .top {
+    width: 100%;
+    height: 550px;
+    padding: 50px 50px 50px 200px;
+    background-color: #6393db;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+  }
+  .about-page .story .story-left .top h3 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 36px;
+    color: white;
+  }
+  .about-page .story .story-left .top .card {
+    position: absolute;
+    width: 450px;
+    height: 230px;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 80px;
+    right: -200px;
+    -webkit-box-shadow: 5px 15px 45px rgba(28, 26, 31, 0.16);
+            box-shadow: 5px 15px 45px rgba(28, 26, 31, 0.16);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px;
+    z-index: 1;
+  }
+  .about-page .story .story-left .top .card h2 {
+    font-size: 28px;
+    color: #2f78e6;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .about-page .story .story-left .top .card h3 {
+    color: #1c1a1f;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .about-page .story .story-left .top .card button {
+    padding: 0px 20px 0px 20px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #2f78e6;
+    border: 1px solid transparent;
+    color: white;
+  }
+  .about-page .story .story-left .bottom {
+    width: 100%;
+    height: 550px;
+    padding: 50px 50px 50px 200px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+  }
+  .about-page .story .story-left .bottom p {
+    margin-top: 30px;
+    line-height: 28px;
+    font-size: 16px;
+  }
+  .about-page .story .story-left .bottom button {
+    margin-top: 30px;
+    padding: 0px 20px 0px 20px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: #2f78e6;
+    border: 1px solid transparent;
+    color: white;
+  }
+  .about-page .story .story-right {
+    width: 50%;
+  }
+  .about-page .story .story-right .top {
+    width: 100%;
+    height: 350px;
+    padding: 50px 200px 50px 80px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+  }
+  .about-page .story .story-right .top h2 {
+    font-size: 28px;
+    color: #2f78e6;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .about-page .story .story-right .top p {
+    line-height: 28px;
+  }
+  .about-page .story .story-right .bottom {
+    width: 100%;
+    height: 750px;
+    padding: 50px 200px 50px 80px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+    background-color: #fafafa;
+  }
+  .about-page .story .story-right .bottom h6 {
+    margin-top: 200px;
+    font-size: 14px;
+    margin-bottom: 100px;
+  }
+  .about-page .story .story-right .bottom span {
+    font-size: 70px;
+    line-height: 0;
+    position: absolute;
+    top: 360px;
+  }
+  .about-page .story .story-right .bottom p {
+    line-height: 32px;
+    font-size: 20px;
+    font-style: italic;
   }
   #mobile {
     display: none;

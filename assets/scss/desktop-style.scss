@@ -343,6 +343,7 @@ $colorBlack : #000000;
                             color: white;
                             border-radius: 20px;
                             width: 25%;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -787,9 +788,10 @@ $colorBlack : #000000;
                                 border: none;
                             }
 
-                            .footer {
+                            .card-footer {
                                 display: flex;
                                 justify-content: space-between;
+                                background-color: white;
 
                                 .action {
                                     .btn-beli {
@@ -820,7 +822,6 @@ $colorBlack : #000000;
                                         color: $colorYellow;
                                         margin-bottom: 5px;
                                         font-weight: 500;
-                                        text-decoration: line-through;
                                     }
 
                                     h4 {
@@ -1255,6 +1256,174 @@ $colorBlack : #000000;
             }
         }
 
+    }
+
+    .about-page {
+
+        .main {
+            padding-top: 80px;
+            display: flex;
+            justify-content: center;
+
+            .content {
+                width: 90%;
+
+                h1 {
+                    font-size: 36px;
+                    margin-bottom: 20px;
+                    color: $colorBlue2;
+                    font-weight: 500;
+                    margin-top: 80px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 28px;
+                    margin-bottom: 80px;
+                    width: 900px;
+                }
+            }
+        }
+
+        .story {
+            display: flex;
+
+            .story-left {
+                width: 50%;
+
+                .top {
+                    width: 100%;
+                    height: 550px;
+                    padding: 50px 50px 50px 200px;
+                    background-color: $colorBlueLight;
+                    box-sizing: border-box;
+                    position: relative;
+
+                    h3 {
+                        font-size: 22px;
+                        font-weight: 500;
+                        line-height: 36px;
+                        color: white;
+                    }
+
+                    .card {
+                        position: absolute;
+                        width: 450px;
+                        height: 230px;
+                        background-color: white;
+                        border-radius: 20px;
+                        bottom: 80px;
+                        right: -200px;
+                        box-shadow: 5px 15px 45px rgba($color: $colorDark, $alpha: 0.16);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        box-sizing: border-box;
+                        padding: 20px;
+                        z-index: 1;
+
+                        h2 {
+                            font-size: 28px;
+                            color: $colorBlue2;
+                            font-weight: 500;
+                            margin-bottom: 20px;
+                        }
+
+                        h3 {
+                            color: $colorDark;
+                            font-size: 16px;
+                            font-weight: 400;
+                            margin-bottom: 20px;
+                        }
+
+                        button {
+                            padding: 0px 20px 0px 20px;
+                            height: 45px;
+                            border-radius: 20px;
+                            background-color: $colorBlue2;
+                            border: 1px solid transparent;
+                            color: white;
+                        }
+                    }
+                }
+
+                .bottom {
+                    width: 100%;
+                    height: 550px;
+                    padding: 50px 50px 50px 200px;
+                    box-sizing: border-box;
+                    position: relative;
+
+                    p {
+                        margin-top: 30px;
+                        line-height: 28px;
+                        font-size: 16px;
+                    }
+
+                    button {
+                        margin-top: 30px;
+                        padding: 0px 20px 0px 20px;
+                        height: 45px;
+                        border-radius: 20px;
+                        background-color: $colorBlue2;
+                        border: 1px solid transparent;
+                        color: white;
+                    }
+                }
+            }
+
+            .story-right {
+                width: 50%;
+
+                .top {
+                    width: 100%;
+                    height: 350px;
+                    padding: 50px 200px 50px 80px;
+                    box-sizing: border-box;
+                    position: relative;
+
+                    h2 {
+                        font-size: 28px;
+                        color: $colorBlue2;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        line-height: 28px;
+                    }
+                }
+
+                .bottom {
+                    width: 100%;
+                    height: 750px;
+                    padding: 50px 200px 50px 80px;
+                    box-sizing: border-box;
+                    position: relative;
+                    background-color: $colorLight2;
+
+                    h6 {
+                        margin-top: 200px;
+                        font-size: 14px;
+                        margin-bottom: 100px;
+                    }
+
+                    span {
+                        font-size: 70px;
+                        line-height: 0;
+                        position: absolute;
+                        top: 360px;
+                    }
+
+                    p {
+                        line-height: 32px;
+                        font-size: 20px;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
     }
 
     #mobile {
