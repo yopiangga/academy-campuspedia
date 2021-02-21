@@ -1849,6 +1849,327 @@
     font-size: 18px;
     font-weight: 500;
   }
+  .contact-page .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-page .main .content {
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-page .main .content .card {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    background-color: #fafafa;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-page .main .content .card h1 {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #2f78e6;
+  }
+  .contact-page .main .content .card p {
+    line-height: 28px;
+    font-size: 16px;
+    width: 750px;
+  }
+  .contact-page .message-information {
+    padding-bottom: 80px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
+  }
+  .contact-page .message-information .content {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact-page .message-information .content .message {
+    width: 48%;
+  }
+  .contact-page .message-information .content .message form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .contact-page .message-information .content .message form .form-group {
+    width: 100%;
+    margin-bottom: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-page .message-information .content .message form .form-group label {
+    margin-bottom: 15px;
+  }
+  .contact-page .message-information .content .message form .form-group input {
+    height: 35px;
+    font-size: 16px;
+    padding: 0px 10px 0px 10px;
+    outline: none;
+    border: 1px solid #a5a5a5;
+    border-radius: 5px;
+  }
+  .contact-page .message-information .content .message form .form-group textarea {
+    border-radius: 5px;
+    border: 1px solid #a5a5a5;
+    padding: 0px 10px 0px 10px;
+    outline: none;
+  }
+  .contact-page .message-information .content .message form button {
+    padding: 0px 20px 0px 20px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: #2f78e6;
+    border: 1px solid transparent;
+    color: white;
+  }
+  .contact-page .message-information .content .information {
+    width: 48%;
+  }
+  .contact-page .message-information .content .information h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .contact-page .message-information .content .information .maps {
+    margin-bottom: 50px;
+  }
+  .contact-page .message-information .content .information .alamat .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .contact-page .message-information .content .information .alamat .item .icon {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-page .message-information .content .information .alamat .item .icon i {
+    font-size: 24px;
+    color: #a5a5a5;
+  }
+  .contact-page .message-information .content .information .alamat .item .text {
+    width: 80%;
+  }
+  .contact-page .message-information .content .information .alamat .item .text p {
+    line-height: 24px;
+  }
+  .faq-page .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .faq-page .main .content {
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .faq-page .main .content .card {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    background-color: #fafafa;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .faq-page .main .content .card h1 {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #2f78e6;
+  }
+  .faq-page .main .content .card p {
+    line-height: 28px;
+    font-size: 16px;
+    width: 750px;
+  }
+  .faq-page .card-faq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .faq-page .card-faq .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+  }
+  .faq-page .card-faq .content .card-group {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .faq-page .card-faq .content .card-group .card {
+    width: 550px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 10px 20px 0px;
+    -webkit-box-shadow: 0px 20px 30px rgba(28, 26, 31, 0.12);
+            box-shadow: 0px 20px 30px rgba(28, 26, 31, 0.12);
+    margin-bottom: 30px;
+    height: 60px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  .faq-page .card-faq .content .card-group .card .icon {
+    width: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .faq-page .card-faq .content .card-group .card .icon .fa-minus {
+    display: none;
+  }
+  .faq-page .card-faq .content .card-group .card .icon .fa-plus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .faq-page .card-faq .content .card-group .card .text {
+    width: 90%;
+  }
+  .faq-page .card-faq .content .card-group .card .text h3 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .faq-page .card-faq .content .card-group .card .text .answer {
+    display: none;
+    border-left: 2px solid #2f78e6;
+    padding: 0px 0px 20px 15px;
+  }
+  .faq-page .card-faq .content .card-group .card .text .answer p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .faq-page .card-faq .content .card-group .card.active {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    height: auto;
+    -webkit-box-shadow: 0px 20px 60px rgba(28, 26, 31, 0.24);
+            box-shadow: 0px 20px 60px rgba(28, 26, 31, 0.24);
+  }
+  .faq-page .card-faq .content .card-group .card.active .icon {
+    color: #2f78e6;
+  }
+  .faq-page .card-faq .content .card-group .card.active .icon .fa-minus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .faq-page .card-faq .content .card-group .card.active .icon .fa-plus {
+    display: none;
+  }
+  .faq-page .card-faq .content .card-group .card.active .text {
+    width: 90%;
+  }
+  .faq-page .card-faq .content .card-group .card.active .text h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  .faq-page .card-faq .content .card-group .card.active .text .answer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-left: 2px solid #2f78e6;
+  }
   #mobile {
     display: none;
   }

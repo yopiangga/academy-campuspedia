@@ -1762,6 +1762,297 @@ $colorBlack : #000000;
 
     }
 
+    .contact-page {
+
+        .main {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            .content {
+                width: 90%;
+                justify-content: center;
+
+                .card {
+                    margin-top: 120px;
+                    margin-bottom: 80px;
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 30px;
+                    background-color: $colorLight2;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    h1 {
+                        font-size: 36px;
+                        line-height: 48px;
+                        margin-bottom: 30px;
+                        font-weight: 500;
+                        color: $colorBlue2;
+                    }
+
+                    p {
+                        line-height: 28px;
+                        font-size: 16px;
+                        width: 750px;
+                    }
+                }
+            }
+        }
+
+        .message-information {
+            padding-bottom: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+
+            .content {
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+
+                .message {
+                    width: 48%;
+
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+
+                        .form-group {
+                            width: 100%;
+                            margin-bottom: 25px;
+                            display: flex;
+                            flex-direction: column;
+
+                            label {
+                                margin-bottom: 15px;
+                            }
+
+                            input {
+                                height: 35px;
+                                font-size: 16px;
+                                padding: 0px 10px 0px 10px;
+                                outline: none;
+                                border: 1px solid $colorGray;
+                                border-radius: 5px;
+                            }
+                            
+                            textarea {
+                                border-radius: 5px;
+                                border: 1px solid $colorGray;
+                                padding: 0px 10px 0px 10px;
+                                outline: none;
+                            }
+                        }
+
+                        button {
+                            padding: 0px 20px 0px 20px;
+                            height: 45px;
+                            border-radius: 25px;
+                            background-color: $colorBlue2;
+                            border: 1px solid transparent;
+                            color: white;
+                        }
+                    }
+                }
+
+                .information {
+                    width: 48%;
+
+                    h2 {
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                    }
+
+                    .maps {
+                        margin-bottom: 50px;
+                    }
+
+                    .alamat {
+
+                        .item {
+                            display: flex;
+                            margin-bottom: 30px;
+
+                            .icon {
+                                width: 15%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                i {
+                                    font-size: 24px;
+                                    color: $colorGray;
+                                }
+                            }
+
+                            .text {
+                                width: 80%;
+
+                                p {
+                                    line-height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .faq-page {
+
+        .main {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            .content {
+                width: 90%;
+                justify-content: center;
+
+                .card {
+                    margin-top: 120px;
+                    margin-bottom: 80px;
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 30px;
+                    background-color: $colorLight2;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    h1 {
+                        font-size: 36px;
+                        line-height: 48px;
+                        margin-bottom: 30px;
+                        font-weight: 500;
+                        color: $colorBlue2;
+                    }
+
+                    p {
+                        line-height: 28px;
+                        font-size: 16px;
+                        width: 750px;
+                    }
+                }
+            }
+        }
+
+        .card-faq {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 50px;
+
+            .content {
+                display: flex;
+                justify-content: center;
+                width: 90%;
+
+                .card-group {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+
+                    .card {
+                        width: 550px;
+                        display: flex;
+                        background-color: white;
+                        border-radius: 20px;
+                        padding: 20px 10px 20px 0px;
+                        box-shadow: 0px 20px 30px rgba($color: $colorDark, $alpha: 0.12);
+                        margin-bottom: 30px;
+                        height: 60px;
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        cursor: pointer;
+                        transition: 300ms;
+
+                        .icon {
+                            width: 10%;
+                            display: flex;
+                            justify-content: center;
+
+                            .fa-minus {
+                                display: none;
+                            }
+
+                            .fa-plus {
+                                display: flex;
+                            }
+                        }
+
+                        .text {
+                            width: 90%;
+
+                            h3 {
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+
+                            .answer {
+                                display: none;
+                                border-left: 2px solid $colorBlue2;
+                                padding: 0px 0px 20px 15px;
+
+                                p {
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                }
+                            }
+                        
+                        }
+                    }
+
+                    .card.active {
+                        transition: 300ms;
+                        height: auto;
+                        box-shadow: 0px 20px 60px rgba($color: $colorDark, $alpha: 0.24);
+
+                        .icon {
+                            color: $colorBlue2;
+
+                            .fa-minus {
+                                display: flex;
+                                
+                            }
+
+                            .fa-plus {
+                                display: none;
+                            }
+                        }
+
+                        .text {
+                            width: 90%;
+
+                            h3 {
+                                font-size: 16px;
+                                font-weight: 500;
+                                margin-bottom: 15px;
+                            }
+
+                            .answer {
+                                display: flex;
+                                border-left: 2px solid $colorBlue2;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     #mobile {
         display: none;
     }
